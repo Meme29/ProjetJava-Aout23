@@ -49,6 +49,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             JMenuItem medicineMenuItem = new JMenuItem("Par médicament");
             JMenuItem validatePreparation = new JMenuItem("Valider une préparation");
             JMenuItem listingEmployee = new JMenuItem("Tous les employés");
+            JMenuItem addEmployee = new JMenuItem("Ajouter");
 
             applicationMenu.add(backToMainFrame);
             animalMenu.add(inscriptionMenuItem);
@@ -60,6 +61,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             researchMenu.add(medicineMenuItem);
             preparationMenu.add(validatePreparation);
             employeeMenu.add(listingEmployee);
+            employeeMenu.add(addEmployee);
 
             backToMainFrame.addActionListener(this);
             inscriptionMenuItem.addActionListener(this);
@@ -71,6 +73,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             medicineMenuItem.addActionListener(this);
             validatePreparation.addActionListener(this);
             listingEmployee.addActionListener(this);
+            addEmployee.addActionListener(this);
 
             setJMenuBar(menuBar);
 
