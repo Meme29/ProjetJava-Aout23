@@ -60,6 +60,26 @@ public class Employee {
         return position;
     }
 
+    public int getNbChilds() {
+        return nbChilds;
+    }
+
+    public Gender getSex() {
+        return sex;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public Boolean getMArried() {
+        return isMArried;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
     @Override
     public String toString(){
         return lastName + " " + firstName.charAt(0) + ".  (" + matricule + " )";

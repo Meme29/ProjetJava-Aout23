@@ -48,7 +48,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             JMenuItem fonctionMenuItem = new JMenuItem("Par fonction");
             JMenuItem medicineMenuItem = new JMenuItem("Par médicament");
             JMenuItem validatePreparation = new JMenuItem("Valider une préparation");
-            JMenuItem listingEmployee = new JMenuItem("Listing");
+            JMenuItem listingEmployee = new JMenuItem("Tous les employés");
 
             applicationMenu.add(backToMainFrame);
             animalMenu.add(inscriptionMenuItem);
@@ -154,8 +154,12 @@ public class MainJFrame extends JFrame implements ActionListener {
           panel.setLayout(new BorderLayout());
           panel.add(preparationPanel,BorderLayout.CENTER);
           panel.revalidate();
-      } else if (e.getActionCommand().equals("Listing")) {
-
+      } else if (e.getActionCommand().equals("Tous les employés")) {
+          EmployeeListingPanel empModel = new EmployeeListingPanel();
+          panel.removeAll();
+          panel.setLayout(new BorderLayout());
+          panel.add(empModel, BorderLayout.CENTER);
+          panel.revalidate();
       }
     }
 }

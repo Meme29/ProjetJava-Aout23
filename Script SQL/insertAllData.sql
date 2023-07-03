@@ -108,19 +108,18 @@ INSERT INTO typeOfCare(id, label) VALUES('ty1', 'soin de base');
 INSERT INTO typeOfCare(id, label) VALUES('ty2', 'soin avancé');
 
 
-INSERT INTO `parc-animalier`.`employee` (`matricule`, `lastName`, `firstName`, `position`, `nbChilds`, `sex`, `birthday`, `isMarried`, `phoneNumber`) 
+INSERT INTO `parc-animalier`.`employee` (`matricule`, `lastName`, `firstName`, `supervisor`, `position`, `nbChilds`, `sex`, `birthday`, `isMarried`, `phoneNumber`) 
 VALUES 
-    ('e1', 'Julius', 'Lilo', 'f1', '6', 'M', '1998-10-21', '0', '+32478 56 59 58'),
-    ('e2', 'Smith', 'John', 'f2', '2', 'M', '1990-05-12', '1', '+32456 78 90 12'),
-    ('e3', 'Johnson', 'Emily', 'f2', '0', 'F', '1985-09-30', '0', '+32464 32 67 89'),
-    ('e4', 'Anderson', 'Jessica', 'f3', '3', 'F', '1995-12-03', '1', '+32491 23 45 67'),
-    ('e5', 'Taylor', 'David', 'f1', '1', 'M', '1992-08-17', '1', '+32435 67 89 01'),
-    ('e6', 'Brown', 'Emma', 'f2', '4', 'F', '1997-03-25', '0', '+32420 45 67 89'),
-    ('e7', 'Lee', 'Olivia', 'f3', '2', 'F', '1988-07-08', '1', '+32456 78 90 23'),
-    ('e8', 'Martin', 'Daniel', 'f2', '0', 'M', '1994-11-29', '0', '+32467 89 01 23'),
-    ('e9', 'Wilson', 'Sophia', 'f1', '3', 'F', '1999-02-14', '1', '+32456 78 90 34'),
-    ('e10', 'Miller', 'Michael', 'f3', '2', 'M', '1993-06-10', '1', '+32435 67 89 45');
-
+    ('e1', 'Julius', 'Lilo', null, 'f1', '6', 'M', '1998-10-21', '0', '+32478 56 59 58'),
+    ('e2', 'Smith', 'John', 'e1','f2', '2', 'M', '1990-05-12', '1', '+32456 78 90 12'),
+    ('e3', 'Johnson', 'Emily', 'e1', 'f2', '0', 'F', '1985-09-30', '0', '+32464 32 67 89'),
+    ('e4', 'Anderson', 'Jessica', null, 'f3', '3', 'F', '1995-12-03', '1', '+32491 23 45 67'),
+    ('e5', 'Taylor', 'David', null,  'f1', '1', 'M', '1992-08-17', '1', '+32435 67 89 01'),
+    ('e6', 'Brown', 'Emma', null, 'f3', '4', 'F', '1997-03-25', '0', '+32420 45 67 89'),
+    ('e7', 'Lee', 'Olivia', 'e6', 'f4', '2', 'F', '1988-07-08', '1', '+32456 78 90 23'),
+    ('e8', 'Martin', 'Daniel', 'e1', 'f2', '0', 'M', '1994-11-29', '0', '+32467 89 01 23'),
+    ('e9', 'Wilson', 'Sophia', null, 'f5', '3', 'F', '1999-02-14', '1', '+32456 78 90 34'),
+    ('e10', 'Miller', 'Michael', 'e9', 'f6', '2', 'M', '1993-06-10', '1', '+32435 67 89 45');
 
 INSERT INTO caresheet (label, date, animal) VALUES ('Soin quotidient', '2022-10-5', 'a');
 INSERT INTO caresheet (label, date, animal) VALUES ('Soin quotidien', '2021-10-05', 'a');
