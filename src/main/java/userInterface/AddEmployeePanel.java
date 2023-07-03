@@ -126,7 +126,28 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
 
     public void actionPerformed(ActionEvent e){
         if (e.getActionCommand().equals("Ajouter")){
+            String matricule = matriculeField.getText();
+            String lastName = lastNameField.getText();
+            String firstName = firstNameField.getText();
+            Employee supervisor = (Employee) supervisorComboBox.getSelectedItem();
+            Fonction position = (Fonction) positionComboBox.getSelectedItem();
+            String nbChilds = nbChildsField.getText();
+            Gender sex;
+            if (maleButton.isSelected()){
+                sex = Gender.M;
+            } else if (femaleButton.isSelected()){
+                sex = Gender.F;
+            } else {
+                sex = Gender.X;
+            }
+            Date birthday = model.getDate();
+            Boolean isMarried = isMarriedBox.isSelected();
+            String phoneNumber = phoneNumberField.getText();
+            if (phoneNumberField.getText().isEmpty()){
+                phoneNumber = "";
+            }
 
+            // TODO Ajout animal
         }
     }
 }
