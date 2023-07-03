@@ -31,11 +31,13 @@ public class MainJFrame extends JFrame implements ActionListener {
             JMenu animalMenu = new JMenu("Animal");
             JMenu researchMenu = new JMenu("Recherche");
             JMenuItem preparationMenu = new JMenu("Fiche de préparation");
+            JMenu employeeMenu = new JMenu("Employé");
 
             menuBar.add(applicationMenu);
             menuBar.add(animalMenu);
             menuBar.add(researchMenu);
             menuBar.add(preparationMenu);
+            menuBar.add(employeeMenu);
 
             JMenuItem backToMainFrame = new JMenuItem("Retour à la fenêtre principal");
             JMenuItem inscriptionMenuItem = new JMenuItem("Inscription");
@@ -46,6 +48,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             JMenuItem fonctionMenuItem = new JMenuItem("Par fonction");
             JMenuItem medicineMenuItem = new JMenuItem("Par médicament");
             JMenuItem validatePreparation = new JMenuItem("Valider une préparation");
+            JMenuItem listingEmployee = new JMenuItem("Listing");
 
             applicationMenu.add(backToMainFrame);
             animalMenu.add(inscriptionMenuItem);
@@ -56,6 +59,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             researchMenu.add(fonctionMenuItem);
             researchMenu.add(medicineMenuItem);
             preparationMenu.add(validatePreparation);
+            employeeMenu.add(listingEmployee);
 
             backToMainFrame.addActionListener(this);
             inscriptionMenuItem.addActionListener(this);
@@ -66,6 +70,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             fonctionMenuItem.addActionListener(this);
             medicineMenuItem.addActionListener(this);
             validatePreparation.addActionListener(this);
+            listingEmployee.addActionListener(this);
 
             setJMenuBar(menuBar);
 
@@ -149,6 +154,8 @@ public class MainJFrame extends JFrame implements ActionListener {
           panel.setLayout(new BorderLayout());
           panel.add(preparationPanel,BorderLayout.CENTER);
           panel.revalidate();
+      } else if (e.getActionCommand().equals("Listing")) {
+
       }
     }
 }

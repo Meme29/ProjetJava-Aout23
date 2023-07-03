@@ -424,11 +424,18 @@ public class DBAccess implements DaoAccess{
 
             while (data.next()) {
                 if (!data.wasNull()) {
+                    String sexGet = data.getString("sex");
+                    Gender sex = Gender.valueOf(sexGet);
                     Employee employee = new Employee(data.getString("matricule"),
                             data.getString("lastName"),
                             data.getString("firstName"),
                             data.getString("supervisor"),
-                            data.getString("position"));
+                            data.getString("position"),
+                            data.getInt("nbChilds"),
+                            sex,
+                            data.getDate("birthday"),
+                            data.getBoolean("isMarried"),
+                            data.getString("phoneNumber"));
                     listOfEmployees.add(employee);
                 }
             }
