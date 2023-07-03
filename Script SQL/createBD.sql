@@ -59,12 +59,18 @@ CREATE TABLE `employee` (
   `firstName` varchar(20) NOT NULL,
   `supervisor` varchar(20) DEFAULT NULL,
   `position` varchar(20) NOT NULL,
+  `nbChilds` int NOT NULL,
+  `sex` enum('F','M','X') NOT NULL,
+  `birthday` date NOT NULL,
+  `isMArried` tinyint NOT NULL,
+  `phoneNumber` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`matricule`),
   UNIQUE KEY `matricule_UNIQUE` (`matricule`),
+  UNIQUE KEY `phoneNumber_UNIQUE` (`phoneNumber`),
   KEY `position_idx` (`position`),
   CONSTRAINT `position` FOREIGN KEY (`position`) REFERENCES `fonction` (`id`) ON DELETE CASCADE,
   CONSTRAINT `supervisor` FOREIGN KEY (`matricule`) REFERENCES `employee` (`matricule`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3
 
 CREATE TABLE `caresheet` (
   `label` varchar(45) NOT NULL,

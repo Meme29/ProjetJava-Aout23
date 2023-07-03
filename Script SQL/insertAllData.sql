@@ -108,39 +108,18 @@ INSERT INTO typeOfCare(id, label) VALUES('ty1', 'soin de base');
 INSERT INTO typeOfCare(id, label) VALUES('ty2', 'soin avancé');
 
 
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp1', 'Donnateli','Géraldine', null, 'f1');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp2', 'Smith', 'John', 'emp1', 'f2');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp3', 'Lee', 'Yun', null, 'f3');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp4', 'Dubois', 'Jean', 'emp3', 'f4');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp5', 'Velkoz', 'Johnny', null, 'f5');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp6', 'Nguyen', 'Thi', 'emp5', 'f6');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp7', 'Martin', 'Sophie', null, 'f1');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp8', 'Garcia', 'Maria', 'emp1', 'f2');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp9', 'Lee', 'Jin', null, 'f3');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp10', 'Moreau', 'Julie', 'emp3', 'f4');
-
-INSERT INTO employee (matricule, lastName, firstName, supervisor, position)
-VALUES ('emp11', 'Zhang', 'Huan', 'emp5', 'f5');
-
+INSERT INTO `parc-animalier`.`employee` (`matricule`, `lastName`, `firstName`, `position`, `nbChilds`, `sex`, `birthday`, `isMarried`, `phoneNumber`) 
+VALUES 
+    ('e1', 'Julius', 'Lilo', 'f1', '6', 'M', '1998-10-21', '0', '+32478 56 59 58'),
+    ('e2', 'Smith', 'John', 'f2', '2', 'M', '1990-05-12', '1', '+32456 78 90 12'),
+    ('e3', 'Johnson', 'Emily', 'f2', '0', 'F', '1985-09-30', '0', '+32464 32 67 89'),
+    ('e4', 'Anderson', 'Jessica', 'f3', '3', 'F', '1995-12-03', '1', '+32491 23 45 67'),
+    ('e5', 'Taylor', 'David', 'f1', '1', 'M', '1992-08-17', '1', '+32435 67 89 01'),
+    ('e6', 'Brown', 'Emma', 'f2', '4', 'F', '1997-03-25', '0', '+32420 45 67 89'),
+    ('e7', 'Lee', 'Olivia', 'f3', '2', 'F', '1988-07-08', '1', '+32456 78 90 23'),
+    ('e8', 'Martin', 'Daniel', 'f2', '0', 'M', '1994-11-29', '0', '+32467 89 01 23'),
+    ('e9', 'Wilson', 'Sophia', 'f1', '3', 'F', '1999-02-14', '1', '+32456 78 90 34'),
+    ('e10', 'Miller', 'Michael', 'f3', '2', 'M', '1993-06-10', '1', '+32435 67 89 45');
 
 
 INSERT INTO caresheet (label, date, animal) VALUES ('Soin quotidient', '2022-10-5', 'a');

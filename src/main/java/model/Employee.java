@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Date;
+
 public class Employee {
     private String matricule;
     private String lastName;
@@ -7,12 +9,35 @@ public class Employee {
     private String supervisor;
     private String position;
 
-    public Employee(String matricule, String lastName, String firstName, String supervisor, String position) {
+    private int nbChilds;
+    private Gender sex;
+    private Date birthday;
+    private Boolean isMArried;
+    private String phoneNumber;
+
+    public Employee(String matricule, String lastName, String firstName, String supervisor, String position, int nbChilds, Gender sex, Date birthday, Boolean isMArried, String phoneNumber) {
         this.matricule = matricule;
         this.lastName = lastName;
         this.firstName = firstName;
         this.supervisor = supervisor;
         this.position = position;
+        this.nbChilds = nbChilds;
+        this.sex = sex;
+        this.birthday = birthday;
+        this.isMArried = isMArried;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Employee(String matricule, String lastName, String firstName, String supervisor, String position, int nbChilds, Gender sex, Date birthday, Boolean isMArried) {
+        this.matricule = matricule;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.supervisor = supervisor;
+        this.position = position;
+        this.nbChilds = nbChilds;
+        this.sex = sex;
+        this.birthday = birthday;
+        this.isMArried = isMArried;
     }
 
     public String getMatricule() {
