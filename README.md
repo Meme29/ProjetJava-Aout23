@@ -1,2 +1,2 @@
-# projet-parc-animalier
-## Crée par Amélie Olémans et Thomas Laurent
+# Projet parc animalier
+## Crée par Amélie Olémans pour la session d'aout 2023
