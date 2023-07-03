@@ -5,78 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eb77b03-8cc2-477e-95f2-25a1b4f169f0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0416130d-7216-4729-bece-f60a2cac4bf8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0416130d-7216-4729-bece-f60a2cac4bf8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bdc6f591-28b0-48d5-972c-2b8b79f419fa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bdc6f591-28b0-48d5-972c-2b8b79f419fa/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bdc6f591-28b0-48d5-972c-2b8b79f419fa/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bdc6f591-28b0-48d5-972c-2b8b79f419fa/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bdc6f591-28b0-48d5-972c-2b8b79f419fa/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/AddAnimalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/AddAnimalException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/CareSheetResearchException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/CareSheetResearchException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/DeleteAnimalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/DeleteAnimalException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/EmptyNameException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/EmptyNameException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/EndConnectionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/EndConnectionException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/GetAllAnimalsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/GetAllAnimalsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/GetAnimalsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/GetAnimalsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/GetBreedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/GetBreedException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/GetSpeciesException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/GetSpeciesException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ListEmployeesException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ListEmployeesException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ListMedicineException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ListMedicineException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ListPreparationsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ListPreparationsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/MedecineResearchException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/MedecineResearchException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ModifyAnimalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ModifyAnimalException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ModifyPreparationsheetException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/ModifyPreparationsheetException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/RemarkByFonctionsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/RemarkByFonctionsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/SingletonConnexionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/SingletonConnexionException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/animalExistsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/animalExistsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/listBreedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/listBreedException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/listFonctionsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/listFonctionsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/listSpeciesException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/Exceptions/listSpeciesException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/business/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/business/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/controller/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/controller/ApplicationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/DBAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/DBAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/DaoAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/DaoAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/SingletonConnexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/SingletonConnexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Breed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Breed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/CareSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/CareSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/CareSheetResearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/CareSheetResearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/EnumRank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/EnumRank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Fonction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Fonction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Gender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Medicine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Medicine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/PreparationSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/PreparationSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/PrescriptionSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/PrescriptionSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Remark.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Remark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/RemarkByFonction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/RemarkByFonction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Species.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Species.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Treatment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/Treatment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/TreatmentByMedicine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/TreatmentByMedicine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/TypeOfCare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/model/TypeOfCare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/AnimalTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/AnimalTableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/AntilopeAnimation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/AntilopeAnimation$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/AntilopeAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/AntilopeAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/CareSheetPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/CareSheetPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/CareSheetTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/CareSheetTableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/DeletePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/DeletePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/FormAddAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/FormAddAnimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/ListingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/ListingPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MedicinePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MedicinePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MedicineTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MedicineTableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/ModifyPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/ModifyPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/PreparationPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/PreparationPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/PreparationTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/PreparationTableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/RemarkPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/RemarkPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/RemarkTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/RemarkTableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-parc-animalier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/projet-parc-animalier.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/business/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/business/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/userInterface/FormAddAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userInterface/FormAddAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/userInterface/MainJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userInterface/MainJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0416130d-7216-4729-bece-f60a2cac4bf8.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,29 +31,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Henallux/Projet Java Parc Animalier/Code Parc Animalier/mysql-connector-j-8.0.33&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="userInterface.Main" />
+      <module name="projet-parc-animalier" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userInterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -146,6 +81,7 @@
       <workItem from="1684512028458" duration="1817000" />
       <workItem from="1685008945263" duration="3181000" />
       <workItem from="1685082212769" duration="2998000" />
+      <workItem from="1688374106103" duration="57000" />
     </task>
     <servers />
   </component>
