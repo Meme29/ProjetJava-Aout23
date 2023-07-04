@@ -448,7 +448,7 @@ public class DBAccess implements DaoAccess{
         return listOfEmployees;
     }
 
-    public Boolean EmployeeExisting (String matricule) throws EmployeeIsExisting {
+    public Boolean employeeExisting (String matricule) throws EmployeeIsExisting {
         try {
             String sqlInstruction = "SELECT * FROM animal a WHERE a.code = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sqlInstruction);

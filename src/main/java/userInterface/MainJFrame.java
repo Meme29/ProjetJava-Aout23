@@ -163,6 +163,12 @@ public class MainJFrame extends JFrame implements ActionListener {
           panel.setLayout(new BorderLayout());
           panel.add(empModel, BorderLayout.CENTER);
           panel.revalidate();
+      } else if (e.getActionCommand().equals("Ajouter")){
+          AddEmployeePanel addEmployeePanel = new AddEmployeePanel();
+          panel.removeAll();
+          panel.setLayout(new BorderLayout());
+          panel.add(addEmployeePanel, BorderLayout.CENTER);
+          panel.revalidate();
       }
     }
 }

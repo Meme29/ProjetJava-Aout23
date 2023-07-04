@@ -64,8 +64,8 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
             for (Fonction fonction: positionsList) {
                 positionComboBox.addItem(fonction);
             }
-            formPanel.add(supervisorLabel);
-            formPanel.add(supervisorComboBox);
+            formPanel.add(positionLabel);
+            formPanel.add(positionComboBox);
 
             nbChildsLabel = new JLabel("Nombre d'enfants * :");
             nbChildsField = new JTextField(10);
@@ -154,16 +154,16 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
             Employee employee;
             Boolean matriculeNotFree = false;
             try {
-                matriculeNotFree = controller.EmployeeExisting(matricule);
+                matriculeNotFree = controller.employeeExisting(matricule);
             } catch (EmployeeIsExisting exception) {
                 JOptionPane.showMessageDialog(null, exception.getMessage(), "Erreur de saisie", JOptionPane.ERROR_MESSAGE);
             }
 
             if (matriculeNotFree) {
-                JOptionPane.showMessageDialog(null,"Le matricule choisi n'est pas disponible.","Erreur",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Le matricule choisi n'est pas disponible.", "Erreur", JOptionPane.ERROR_MESSAGE);
             } else {
                 if (matricule.length() > 20 || matricule.isEmpty()) {
-                    JOptionPane.showMessageDialog(null,"Le code doit contenir entre 1 et 20 caractères.","Erreur",JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Le matricule doit contenir entre 1 et 20 caractères.", "Erreur", JOptionPane.ERROR_MESSAGE);
                 } else {
                     if (lastName.length() > 20 || lastName.isEmpty()) {
                         JOptionPane.showMessageDialog(null, "Le nom doit contenir entre 1 et 20 caractères.", "Erreur", JOptionPane.ERROR_MESSAGE);
@@ -181,7 +181,7 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
                                         JOptionPane.showMessageDialog(null, "Le nombre d'enfants ne doit pas être vide", "Erreur", JOptionPane.ERROR_MESSAGE);
                                     } else {
                                         if (!nbChildsInfo.matches("-?\\d+(\\.\\d+)?")) {
-                                            JOptionPane.showMessageDialog(null, "Le champ poids doit contenir seulement des chiffres.", "Erreur", JOptionPane.ERROR_MESSAGE);
+                                            JOptionPane.showMessageDialog(null, "Le champ nombre d'enfants doit contenir seulement des chiffres.", "Erreur", JOptionPane.ERROR_MESSAGE);
                                         } else {
                                             if (nbChildsInfo.length() > 10) {
                                                 JOptionPane.showMessageDialog(null, "Le nombre d'enfants ne doit pas dépasser 10 chiffres", "Erreur", JOptionPane.ERROR_MESSAGE);
@@ -191,43 +191,47 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
                                                     JOptionPane.showMessageDialog(null, "Le nombre d'enfants doit être positif", "Erreur", JOptionPane.ERROR_MESSAGE);
                                                 } else {
                                                     Date now = new Date();
-                                                    if (birthday.after(now) | birthday == now) {
-                                                        JOptionPane.showMessageDialog(null, "Votre anniversaire doit être antérieur à la date avtuelle.", "Erreur", JOptionPane.ERROR_MESSAGE);
+                                                    if (birthday.after(now) || birthday.equals(now)) {
+                                                        JOptionPane.showMessageDialog(null, "Votre anniversaire doit être antérieur à la date actuelle.", "Erreur", JOptionPane.ERROR_MESSAGE);
                                                     } else {
                                                         if (!phoneNumber.isEmpty()) {
                                                             if (phoneNumber.length() > 20) {
                                                                 JOptionPane.showMessageDialog(null, "Le numéro de téléphone doit contenir entre 1 et 20 caractères.", "Erreur", JOptionPane.ERROR_MESSAGE);
                                                             } else if (!phoneNumber.matches("^(\\+\\d{1,3})?\\s?\\d{3,}\\s?\\d{2,}\\s?\\d{2,}$")) {
-                                                                JOptionPane.showMessageDialog(null, "Le surnom doit contenir uniquement des lettres.", "Erreur", JOptionPane.ERROR_MESSAGE);
+                                                                JOptionPane.showMessageDialog(null, "Le numéro de téléphone est invalide.", "Erreur", JOptionPane.ERROR_MESSAGE);
                                                             } else {
                                                                 try {
                                                                     employee = new Employee(matricule, lastName, firstName, supervisorId, positionId, nbChilds, sex, birthday, isMarried, phoneNumber);
-                                                                    controller.add(newAnimal);
-                                                                    codeField.setText("");
-                                                                    nameField.setText("");
-                                                                    weightField.setText("");
-                                                                    sexFemaleButton.setSelected(false);
-                                                                    sexMaleButton.setSelected(true);
-                                                                    nickNameField.setText("");
-                                                                    JOptionPane.showMessageDialog(null, "L'ajout de l'animal a été effectué", "Réussite", JOptionPane.INFORMATION_MESSAGE);
+                                                                    controller.addEmployee(employee);
+                                                                    matriculeField.setText("");
+                                                                    lastNameField.setText("");
+                                                                    firstNameField.setText("");
+                                                                    nbChildsField.setText("");
+                                                                    femaleButton.setSelected(false);
+                                                                    unknownButton.setSelected(false);
+                                                                    maleButton.setSelected(true);
+                                                                    phoneNumberField.setText("");
+                                                                    JOptionPane.showMessageDialog(null, "L'ajout de l'employé a été effectué", "Réussite", JOptionPane.INFORMATION_MESSAGE);
                                                                     revalidate();
-                                                                } catch (AddAnimalException exception) {
+                                                                } catch (AddEmployeeException exception) {
                                                                     JOptionPane.showMessageDialog(null, exception.getMessage(), "Erreur", JOptionPane.ERROR_MESSAGE);
                                                                 }
                                                             }
                                                         } else {
                                                             try {
-                                                                newAnimal = new Animal(code, name, arrivalDate, sex, isDangerous, weight, breed);
-                                                                controller.addAnimal(newAnimal);
-                                                                codeField.setText("");
-                                                                nameField.setText("");
-                                                                weightField.setText("");
-                                                                sexFemaleButton.setSelected(false);
-                                                                sexMaleButton.setSelected(true);
-                                                                nickNameField.setText("");
-                                                                JOptionPane.showMessageDialog(null, "L'ajout de l'animal a été effectué", "Réussite", JOptionPane.INFORMATION_MESSAGE);
+                                                                employee = new Employee(matricule, lastName, firstName, supervisorId, positionId, nbChilds, sex, birthday, isMarried);
+                                                                controller.addEmployee(employee);
+                                                                matriculeField.setText("");
+                                                                lastNameField.setText("");
+                                                                firstNameField.setText("");
+                                                                nbChildsField.setText("");
+                                                                femaleButton.setSelected(false);
+                                                                unknownButton.setSelected(false);
+                                                                maleButton.setSelected(true);
+                                                                phoneNumberField.setText("");
+                                                                JOptionPane.showMessageDialog(null, "L'ajout de l'employé a été effectué", "Réussite", JOptionPane.INFORMATION_MESSAGE);
                                                                 revalidate();
-                                                            } catch (AddAnimalException exception) {
+                                                            } catch (AddEmployeeException exception) {
                                                                 JOptionPane.showMessageDialog(null, exception.getMessage(), "Erreur", JOptionPane.ERROR_MESSAGE);
                                                             }
                                                         }
@@ -241,13 +245,16 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
                         }
                     }
                 }
-            } else if (e.getActionCommand().equals("Annuler")) {
-                codeField.setText("");
-                nameField.setText("");
-                weightField.setText("");
-                sexFemaleButton.setSelected(false);
-                sexMaleButton.setSelected(true);
-                nickNameField.setText("");
+            }
+            if (e.getActionCommand().equals("Annuler")) {
+                matriculeField.setText("");
+                lastNameField.setText("");
+                firstNameField.setText("");
+                nbChildsField.setText("");
+                femaleButton.setSelected(false);
+                unknownButton.setSelected(false);
+                maleButton.setSelected(true);
+                phoneNumberField.setText("");
                 revalidate();
             }
         }

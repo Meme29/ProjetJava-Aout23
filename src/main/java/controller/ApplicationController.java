@@ -90,7 +90,11 @@ public class ApplicationController {
         return manager.listEmployees();
     }
 
-    public Boolean EmployeeExisting (String matricule) throws EmployeeIsExisting {
-        return manager.EmployeeExisting(matricule);
+    public Boolean employeeExisting (String matricule) throws EmployeeIsExisting {
+        return manager.employeeExisting(matricule);
+    }
+
+    public void addEmployee (Employee employee) throws AddEmployeeException{
+        manager.addEmployee(employee);
     }
 }

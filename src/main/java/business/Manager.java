@@ -92,7 +92,11 @@ public class Manager {
         return dao.listEmployees();
     }
 
-    public Boolean EmployeeExisting (String matricule) throws EmployeeIsExisting {
-        return dao.EmployeeExisting(matricule);
+    public Boolean employeeExisting (String matricule) throws EmployeeIsExisting {
+        return dao.employeeExisting(matricule);
+    }
+
+    public void addEmployee (Employee employee) throws AddEmployeeException{
+        dao.addEmployee(employee);
     }
 }
