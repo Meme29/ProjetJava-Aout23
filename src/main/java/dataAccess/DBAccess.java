@@ -414,6 +414,8 @@ public class DBAccess implements DaoAccess{
         return species;
     }
 
+    /*------------------------------------------------------------------------------------------------------------------*/
+
     public ArrayList<Employee> listEmployees() throws ListEmployeesException {
         ArrayList<Employee> listOfEmployees = new ArrayList<Employee>();
         try {
@@ -444,6 +446,46 @@ public class DBAccess implements DaoAccess{
             throw new ListEmployeesException(message);
         }
         return listOfEmployees;
+    }
+
+    public Boolean EmployeeExisting (String matricule) throws EmployeeIsExisting {
+        try {
+            String sqlInstruction = "SELECT * FROM animal a WHERE a.code = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sqlInstruction);
+            preparedStatement.setString(1, matricule);
+            ResultSet data = preparedStatement.executeQuery();
+            boolean hasData = data.next();
+            return hasData;
+        } catch (SQLException e) {
+            String message = "Impossible de récuperer les données de la table \"Employé\"";
+            throw new EmployeeIsExisting(message);
+        }
+    }
+
+    public void addEmployee(Employee employee) throws AddEmployeeException {
+        String sqlInstruction = "insert into employee (matricule, lastName, firstName, supervisor, position, nbChilds, sex, birthday, isMArried, phoneNumber) values (?,?,?,?,?,?,?,?,?,?)";
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = connection.prepareStatement(sqlInstruction);
+            preparedStatement.setString(1, employee.getMatricule());
+            preparedStatement.setString(2, employee.getLastName());
+            preparedStatement.setString(3, employee.getFirstName());
+            preparedStatement.setString(4, employee.getSupervisor());
+            preparedStatement.setString(5, employee.getPosition());
+            preparedStatement.setInt(6, employee.getNbChilds());
+            preparedStatement.setString(7, employee.getSex().getLabel());
+
+            java.util.Date birthday = employee.getBirthday();
+            java.sql.Date sqlBirthday = new java.sql.Date(birthday.getTime());
+            preparedStatement.setDate(8, sqlBirthday);
+            preparedStatement.setBoolean(9, employee.getMArried());
+            preparedStatement.setString(10, employee.getPhoneNumber());
+
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            String message = "Erreur lors de l'ajout de l'employé";
+            throw new AddEmployeeException(message);
+        }
     }
 
 }

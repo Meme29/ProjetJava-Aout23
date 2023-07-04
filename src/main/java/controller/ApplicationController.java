@@ -89,4 +89,8 @@ public class ApplicationController {
     public ArrayList<Employee> listEmployees() throws ListEmployeesException{
         return manager.listEmployees();
     }
+
+    public Boolean EmployeeExisting (String matricule) throws EmployeeIsExisting {
+        return manager.EmployeeExisting(matricule);
+    }
 }

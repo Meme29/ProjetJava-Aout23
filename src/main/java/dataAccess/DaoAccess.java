@@ -26,6 +26,7 @@ public interface DaoAccess {
     public void modifyPreparationSheet(String employeId,int code) throws ModifyPreparationsheetException;
     public Species getSpecies(String code) throws GetSpeciesException;
     public ArrayList<Employee> listEmployees() throws ListEmployeesException;
+    Boolean EmployeeExisting (String matricule) throws EmployeeIsExisting;
 
 
 }

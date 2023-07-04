@@ -91,4 +91,8 @@ public class Manager {
     public ArrayList<Employee> listEmployees() throws ListEmployeesException{
         return dao.listEmployees();
     }
+
+    public Boolean EmployeeExisting (String matricule) throws EmployeeIsExisting {
+        return dao.EmployeeExisting(matricule);
+    }
 }

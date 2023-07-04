@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eb77b03-8cc2-477e-95f2-25a1b4f169f0" name="Changes" comment="Ajout employé partie 1">
+    <list default="true" id="0eb77b03-8cc2-477e-95f2-25a1b4f169f0" name="Changes" comment="Ajout employé partie 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/AddEmployeeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/EmployeeIsExisting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0416130d-7216-4729-bece-f60a2cac4bf8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0416130d-7216-4729-bece-f60a2cac4bf8/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0416130d-7216-4729-bece-f60a2cac4bf8/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/business/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/business/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataAccess/DBAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/DBAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataAccess/DaoAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/DaoAccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/userInterface/AddEmployeePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userInterface/AddEmployeePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +97,8 @@
       <workItem from="1684512028458" duration="1817000" />
       <workItem from="1685008945263" duration="3181000" />
       <workItem from="1685082212769" duration="2998000" />
-      <workItem from="1688374106103" duration="11296000" />
+      <workItem from="1688374106103" duration="13104000" />
+      <workItem from="1688469499883" duration="3120000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1688374358180</created>
@@ -127,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688387153253</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ajout employé partie 2">
+      <created>1688388003987</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688388003987</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +165,7 @@
     <MESSAGE value="Ajout menu" />
     <MESSAGE value="Listing Employee fait" />
     <MESSAGE value="Ajout employé partie 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout employé partie 1" />
+    <MESSAGE value="Ajout employé partie 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout employé partie 2" />
   </component>
 </project>
