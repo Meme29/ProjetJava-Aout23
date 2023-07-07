@@ -119,7 +119,8 @@ VALUES
     ('e7', 'Lee', 'Olivia', 'e6', 'f4', '2', 'F', '1988-07-08', '1', '+32456 78 90 23'),
     ('e8', 'Martin', 'Daniel', 'e1', 'f2', '0', 'M', '1994-11-29', '0', '+32467 89 01 23'),
     ('e9', 'Wilson', 'Sophia', null, 'f5', '3', 'F', '1999-02-14', '1', '+32456 78 90 34'),
-    ('e10', 'Miller', 'Michael', 'e9', 'f6', '2', 'M', '1993-06-10', '1', '+32435 67 89 45');
+    ('e10', 'Miller', 'Michael', 'e9', 'f6', '2', 'M', '1993-06-10', '1', null);
+
 
 INSERT INTO caresheet (label, date, animal) VALUES ('Soin quotidient', '2022-10-5', 'a');
 INSERT INTO caresheet (label, date, animal) VALUES ('Soin quotidien', '2021-10-05', 'a');
