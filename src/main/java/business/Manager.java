@@ -105,4 +105,8 @@ public class Manager {
     public void deleteEmployee(String matricule) throws DeleteEmployeeException{
         dao.deleteEmployee(matricule);
     }
+
+    public void modifyEmployee(Employee employee) throws ModifyEmployeeException {
+        dao.modifyEmployee(employee);
+    }
 }

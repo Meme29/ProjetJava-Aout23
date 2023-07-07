@@ -4,22 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eb77b03-8cc2-477e-95f2-25a1b4f169f0" name="Changes" comment="Ajout employé fin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/DeleteEmployeeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/userInterface/DeleteEmployeePanel.java" afterDir="false" />
+    <list default="true" id="0eb77b03-8cc2-477e-95f2-25a1b4f169f0" name="Changes" comment="Suppression faite">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/ModifyEmployeeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/userInterface/ModifyEmployeePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/business/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/business/Manager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/controller/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/controller/ApplicationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/DBAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/DBAccess.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/DaoAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/dataAccess/DaoAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-parc-animalier/userInterface/MainJFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/business/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/business/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ApplicationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dataAccess/DBAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/DBAccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dataAccess/DaoAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/DaoAccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/userInterface/AddEmployeePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userInterface/AddEmployeePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/userInterface/MainJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userInterface/MainJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/userInterface/ModifyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userInterface/ModifyPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +104,7 @@
       <workItem from="1685082212769" duration="2998000" />
       <workItem from="1688374106103" duration="13104000" />
       <workItem from="1688469499883" duration="7266000" />
-      <workItem from="1688718315319" duration="2065000" />
+      <workItem from="1688718315319" duration="10040000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1688374358180</created>
@@ -161,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688474601353</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Suppression faite">
+      <created>1688720596334</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688720596334</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +195,7 @@
     <MESSAGE value="Ajout employé partie 2" />
     <MESSAGE value="Ajout employé partie 3" />
     <MESSAGE value="Ajout employé fin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout employé fin" />
+    <MESSAGE value="Suppression faite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Suppression faite" />
   </component>
 </project>

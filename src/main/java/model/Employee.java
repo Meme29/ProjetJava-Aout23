@@ -1,5 +1,6 @@
 package model;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class Employee {
@@ -22,7 +23,7 @@ public class Employee {
         this.supervisor = supervisor;
         this.position = position;
         this.nbChilds = nbChilds;
-        this.sex = sex;
+        setSex(sex);
         this.birthday = birthday;
         this.isMArried = isMArried;
         this.phoneNumber = phoneNumber;
@@ -35,7 +36,7 @@ public class Employee {
         this.supervisor = supervisor;
         this.position = position;
         this.nbChilds = nbChilds;
-        this.sex = sex;
+        setSex(sex);
         this.birthday = birthday;
         this.isMArried = isMArried;
     }
@@ -81,8 +82,11 @@ public class Employee {
     }
 
     public void setSex(Gender sex) {
-        this.sex = sex;
-        // TODO setGender
+        if (Arrays.asList(Gender.values()).contains(sex)) {
+            this.sex = sex;
+        } else {
+            this.sex = Gender.X;
+        }
     }
 
     @Override

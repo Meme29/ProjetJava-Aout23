@@ -279,7 +279,5 @@ public class ModifyPanel extends JPanel implements ActionListener{
             revalidate();
             repaint();
         }
-
-
     }
 }

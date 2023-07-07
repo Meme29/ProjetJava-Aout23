@@ -500,4 +500,40 @@ public class DBAccess implements DaoAccess{
         }
     }
 
+    public void modifyEmployee(Employee employee) throws ModifyEmployeeException {
+        String sqlInstruction = "UPDATE employee SET " +
+                "lastName = ?, " +
+                "firstName = ?, " +
+                "supervisor = ?, " +
+                "position = ?, " +
+                "nbChilds = ?, " +
+                "sex = ?, " +
+                "birthday = ?, " +
+                "isMarried = ?, " +
+                "phoneNumber = ? " +
+                "WHERE matricule = ?";
+
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = connection.prepareStatement(sqlInstruction);
+            preparedStatement.setString(1, employee.getLastName());
+            preparedStatement.setString(2, employee.getFirstName());
+            preparedStatement.setString(3, employee.getSupervisor());
+            preparedStatement.setString(4, employee.getPosition());
+            preparedStatement.setInt(5, employee.getNbChilds());
+            preparedStatement.setString(6, employee.getSex().getLabel());
+            java.util.Date birthday = employee.getBirthday();
+            java.sql.Date sqlBirthday = new java.sql.Date(birthday.getTime());
+            preparedStatement.setDate(7, sqlBirthday);
+            preparedStatement.setBoolean(8, employee.getMArried());
+            preparedStatement.setString(9, employee.getPhoneNumber());
+            preparedStatement.setString(10, employee.getMatricule());
+
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            String message = "Erreur lors de la modification de l'employé";
+            throw new ModifyEmployeeException(message);
+        }
+    }
+
 }

@@ -88,7 +88,7 @@ public class ApplicationController {
 
     /*------------------------------------------------------------------------------------------------------------------*/
 
-    public ArrayList<Employee> listEmployees() throws ListEmployeesException{
+    public ArrayList<Employee> listEmployees() throws ListEmployeesException {
         return manager.listEmployees();
     }
 
@@ -96,11 +96,15 @@ public class ApplicationController {
         return manager.employeeExisting(matricule);
     }
 
-    public void addEmployee (Employee employee) throws AddEmployeeException{
+    public void addEmployee (Employee employee) throws AddEmployeeException {
         manager.addEmployee(employee);
     }
 
-    public void deleteEmployee(String matricule) throws DeleteEmployeeException{
+    public void deleteEmployee(String matricule) throws DeleteEmployeeException {
         manager.deleteEmployee(matricule);
+    }
+
+    public void modifyEmployee(Employee employee) throws ModifyEmployeeException {
+        manager.modifyEmployee(employee);
     }
 }

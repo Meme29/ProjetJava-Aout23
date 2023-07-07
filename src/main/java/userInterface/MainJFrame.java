@@ -52,6 +52,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             JMenuItem listingEmployee = new JMenuItem("Tous les employés");
             JMenuItem addEmployee = new JMenuItem("Ajouter");
             JMenuItem deleteEmployee = new JMenuItem(("Suppression"));
+            JMenuItem modifyEmployee = new JMenuItem("Modification");
 
             applicationMenu.add(backToMainFrame);
             animalMenu.add(inscriptionMenuItem);
@@ -66,6 +67,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             employeeMenu.add(listingEmployee);
             employeeMenu.add(addEmployee);
             employeeMenu.add(deleteEmployee);
+            employeeMenu.add(modifyEmployee);
 
             backToMainFrame.addActionListener(this);
             inscriptionMenuItem.addActionListener(this);
@@ -80,6 +82,7 @@ public class MainJFrame extends JFrame implements ActionListener {
             listingEmployee.addActionListener(this);
             addEmployee.addActionListener(this);
             deleteEmployee.addActionListener((this));
+            modifyEmployee.addActionListener((this));
 
             setJMenuBar(menuBar);
 
@@ -180,6 +183,12 @@ public class MainJFrame extends JFrame implements ActionListener {
           panel.removeAll();
           panel.setLayout(new BorderLayout());
           panel.add(deleteEmployee, BorderLayout.CENTER);
+          panel.revalidate();
+      } else if(e.getActionCommand().equals("Modification")){
+          ModifyEmployeePanel modifyEmployee = new ModifyEmployeePanel();
+          panel.removeAll();
+          panel.setLayout(new BorderLayout());
+          panel.add(modifyEmployee, BorderLayout.CENTER);
           panel.revalidate();
       }
     }

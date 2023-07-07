@@ -32,6 +32,7 @@ public interface DaoAccess {
     Boolean employeeExisting (String matricule) throws EmployeeIsExisting;
     public void addEmployee(Employee employee) throws AddEmployeeException;
     public void deleteEmployee(String matricule) throws DeleteEmployeeException;
+    public void modifyEmployee(Employee employee) throws ModifyEmployeeException;
 
 
 }
