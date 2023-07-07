@@ -60,7 +60,7 @@ CREATE TABLE `employee` (
   `supervisor` varchar(20) DEFAULT NULL,
   `position` varchar(20) NOT NULL,
   `nbChilds` int NOT NULL,
-  `sex` enum('F','M','X') NOT NULL,
+  `sex` varchar(1) NOT NULL,
   `birthday` date NOT NULL,
   `isMArried` tinyint NOT NULL,
   `phoneNumber` varchar(20) DEFAULT NULL,
