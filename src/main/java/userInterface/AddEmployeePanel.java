@@ -31,9 +31,9 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
             controller = new ApplicationController();
             setLayout(new BorderLayout());
 
+
             JPanel formPanel = new JPanel(new GridLayout(0, 2));
             formPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-
             matriculeLabel = new JLabel("Matricule * :");
             matriculeField = new JTextField(20);
             formPanel.add(matriculeLabel);
@@ -246,17 +246,18 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
                     }
                 }
             }
-            if (e.getActionCommand().equals("Annuler")) {
-                matriculeField.setText("");
-                lastNameField.setText("");
-                firstNameField.setText("");
-                nbChildsField.setText("");
-                femaleButton.setSelected(false);
-                unknownButton.setSelected(false);
-                maleButton.setSelected(true);
-                phoneNumberField.setText("");
-                revalidate();
-            }
+
+        }
+        if (e.getActionCommand().equals("Annuler")) {
+            matriculeField.setText("");
+            lastNameField.setText("");
+            firstNameField.setText("");
+            nbChildsField.setText("");
+            femaleButton.setSelected(false);
+            unknownButton.setSelected(false);
+            maleButton.setSelected(true);
+            phoneNumberField.setText("");
+            revalidate();
         }
     }
 }

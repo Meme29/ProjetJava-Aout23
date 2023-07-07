@@ -80,6 +80,11 @@ public class Employee {
         return phoneNumber;
     }
 
+    public void setSex(Gender sex) {
+        this.sex = sex;
+        // TODO setGender
+    }
+
     @Override
     public String toString(){
         return lastName + " " + firstName.charAt(0) + ".  (" + matricule + " )";

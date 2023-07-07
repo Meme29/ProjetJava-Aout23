@@ -86,6 +86,8 @@ public class ApplicationController {
         return manager.getSpecies(code);
     }
 
+    /*------------------------------------------------------------------------------------------------------------------*/
+
     public ArrayList<Employee> listEmployees() throws ListEmployeesException{
         return manager.listEmployees();
     }
@@ -96,5 +98,9 @@ public class ApplicationController {
 
     public void addEmployee (Employee employee) throws AddEmployeeException{
         manager.addEmployee(employee);
+    }
+
+    public void deleteEmployee(String matricule) throws DeleteEmployeeException{
+        manager.deleteEmployee(matricule);
     }
 }

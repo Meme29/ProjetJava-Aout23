@@ -48,8 +48,10 @@ public class MainJFrame extends JFrame implements ActionListener {
             JMenuItem fonctionMenuItem = new JMenuItem("Par fonction");
             JMenuItem medicineMenuItem = new JMenuItem("Par médicament");
             JMenuItem validatePreparation = new JMenuItem("Valider une préparation");
+
             JMenuItem listingEmployee = new JMenuItem("Tous les employés");
             JMenuItem addEmployee = new JMenuItem("Ajouter");
+            JMenuItem deleteEmployee = new JMenuItem(("Suppression"));
 
             applicationMenu.add(backToMainFrame);
             animalMenu.add(inscriptionMenuItem);
@@ -60,8 +62,10 @@ public class MainJFrame extends JFrame implements ActionListener {
             researchMenu.add(fonctionMenuItem);
             researchMenu.add(medicineMenuItem);
             preparationMenu.add(validatePreparation);
+
             employeeMenu.add(listingEmployee);
             employeeMenu.add(addEmployee);
+            employeeMenu.add(deleteEmployee);
 
             backToMainFrame.addActionListener(this);
             inscriptionMenuItem.addActionListener(this);
@@ -72,8 +76,10 @@ public class MainJFrame extends JFrame implements ActionListener {
             fonctionMenuItem.addActionListener(this);
             medicineMenuItem.addActionListener(this);
             validatePreparation.addActionListener(this);
+
             listingEmployee.addActionListener(this);
             addEmployee.addActionListener(this);
+            deleteEmployee.addActionListener((this));
 
             setJMenuBar(menuBar);
 
@@ -168,6 +174,12 @@ public class MainJFrame extends JFrame implements ActionListener {
           panel.removeAll();
           panel.setLayout(new BorderLayout());
           panel.add(addEmployeePanel, BorderLayout.CENTER);
+          panel.revalidate();
+      } else if (e.getActionCommand().equals("Suppression")){
+          DeleteEmployeePanel deleteEmployee = new DeleteEmployeePanel();
+          panel.removeAll();
+          panel.setLayout(new BorderLayout());
+          panel.add(deleteEmployee, BorderLayout.CENTER);
           panel.revalidate();
       }
     }

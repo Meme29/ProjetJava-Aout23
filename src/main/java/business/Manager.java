@@ -88,6 +88,8 @@ public class Manager {
         return dao.getSpecies(code);
     }
 
+    /*------------------------------------------------------------------------------------------------------------------*/
+
     public ArrayList<Employee> listEmployees() throws ListEmployeesException{
         return dao.listEmployees();
     }
@@ -98,5 +100,9 @@ public class Manager {
 
     public void addEmployee (Employee employee) throws AddEmployeeException{
         dao.addEmployee(employee);
+    }
+
+    public void deleteEmployee(String matricule) throws DeleteEmployeeException{
+        dao.deleteEmployee(matricule);
     }
 }

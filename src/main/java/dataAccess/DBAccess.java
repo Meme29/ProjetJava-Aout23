@@ -218,7 +218,6 @@ public class DBAccess implements DaoAccess{
         }
     }
 
-
     public ArrayList<Species> listSpecies() throws ListSpeciesException {
         ArrayList<Species> listOfSpecies = new ArrayList<Species>();
         try {
@@ -485,6 +484,19 @@ public class DBAccess implements DaoAccess{
         } catch (SQLException e) {
             String message = "Erreur lors de l'ajout de l'employé";
             throw new AddEmployeeException(message);
+        }
+    }
+
+    public void deleteEmployee(String matricule) throws DeleteEmployeeException{
+        try {
+            String sqlInstruction = "DELETE FROM employee\n" +
+                    "WHERE matricule = ?;";
+            PreparedStatement preparedStatement = connection.prepareStatement(sqlInstruction);
+            preparedStatement.setString(1, matricule);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            String message = "Impossible de supprimer cet animal";
+            throw new DeleteEmployeeException(message);
         }
     }
 
