@@ -1,8 +1,9 @@
 package userInterface;
 
-import Exceptions.*;
+import Exceptions.GetAllAnimalsException;
+import Exceptions.SingletonConnexionException;
 import controller.ApplicationController;
-import model.*;
+import model.Animal;
 
 import javax.swing.*;
 import java.awt.*;

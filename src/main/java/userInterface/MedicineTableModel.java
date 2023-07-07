@@ -1,5 +1,6 @@
 package userInterface;
-import model.*;
+
+import model.TreatmentByMedicine;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;

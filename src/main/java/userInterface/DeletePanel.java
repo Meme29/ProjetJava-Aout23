@@ -1,8 +1,10 @@
 package userInterface;
 
-import model.*;
-import controller.*;
-import Exceptions.*;
+import Exceptions.DeleteAnimalException;
+import Exceptions.GetAllAnimalsException;
+import Exceptions.SingletonConnexionException;
+import controller.ApplicationController;
+import model.Animal;
 
 import javax.swing.*;
 import java.awt.*;

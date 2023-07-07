@@ -1,8 +1,9 @@
 package userInterface;
 
-import model.*;
-import controller.*;
 import Exceptions.*;
+import controller.ApplicationController;
+import model.Employee;
+import model.Fonction;
 
 import javax.swing.*;
 import javax.swing.text.DateFormatter;
@@ -136,13 +137,13 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
             String positionId = position.getId();
 
             String nbChildsInfo = nbChildsField.getText();
-            Gender sex;
+            char sex;
             if (maleButton.isSelected()){
-                sex = Gender.M;
+                sex = 'M';
             } else if (femaleButton.isSelected()){
-                sex = Gender.F;
+                sex = 'F';
             } else {
-                sex = Gender.X;
+                sex = 'X';
             }
             Date birthday = model.getDate();
             Boolean isMarried = isMarriedBox.isSelected();

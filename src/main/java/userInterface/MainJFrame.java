@@ -1,13 +1,14 @@
 package userInterface;
 
 
-import controller.*;
+import Exceptions.EndConnectionException;
+import Exceptions.SingletonConnexionException;
+import controller.ApplicationController;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import Exceptions.*;
+import java.awt.event.ActionListener;
 
 public class MainJFrame extends JFrame implements ActionListener {
     private JPanel panel;

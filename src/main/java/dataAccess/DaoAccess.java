@@ -1,8 +1,9 @@
 package dataAccess;
 
 
-import model.*;
 import Exceptions.*;
+import model.*;
+
 import java.util.ArrayList;
 
 public interface DaoAccess {

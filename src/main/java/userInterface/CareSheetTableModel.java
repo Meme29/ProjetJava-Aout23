@@ -1,8 +1,8 @@
 package userInterface;
 
-import javax.swing.table.AbstractTableModel;
-import model.*;
+import model.CareSheetResearch;
 
+import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
 import java.util.Date;
 

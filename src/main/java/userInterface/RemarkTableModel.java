@@ -1,7 +1,8 @@
 package userInterface;
 
+import model.RemarkByFonction;
+
 import javax.swing.table.AbstractTableModel;
-import model.*;
 import java.util.ArrayList;
 
 public class RemarkTableModel extends AbstractTableModel {

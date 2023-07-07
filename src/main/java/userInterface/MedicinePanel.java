@@ -1,8 +1,12 @@
 package userInterface;
 
-import model.*;
-import controller.*;
-import Exceptions.*;
+import Exceptions.EmptyNameException;
+import Exceptions.ListMedicineException;
+import Exceptions.MedecineResearchException;
+import Exceptions.SingletonConnexionException;
+import controller.ApplicationController;
+import model.Medicine;
+import model.TreatmentByMedicine;
 
 import javax.swing.*;
 import java.awt.*;

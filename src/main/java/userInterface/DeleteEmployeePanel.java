@@ -1,8 +1,9 @@
 package userInterface;
 
-import Exceptions.*;
+import Exceptions.DeleteEmployeeException;
+import Exceptions.ListEmployeesException;
+import Exceptions.SingletonConnexionException;
 import controller.ApplicationController;
-import model.Animal;
 import model.Employee;
 
 import javax.swing.*;

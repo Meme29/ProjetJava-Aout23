@@ -1,6 +1,5 @@
 package model;
 
-import java.util.Arrays;
 import java.util.Date;
 
 public class Employee {
@@ -11,12 +10,12 @@ public class Employee {
     private String position;
 
     private int nbChilds;
-    private Gender sex;
+    private char sex;
     private Date birthday;
     private Boolean isMArried;
     private String phoneNumber;
 
-    public Employee(String matricule, String lastName, String firstName, String supervisor, String position, int nbChilds, Gender sex, Date birthday, Boolean isMArried, String phoneNumber) {
+    public Employee(String matricule, String lastName, String firstName, String supervisor, String position, int nbChilds, char sex, Date birthday, Boolean isMArried, String phoneNumber) {
         this.matricule = matricule;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -29,7 +28,7 @@ public class Employee {
         this.phoneNumber = phoneNumber;
     }
 
-    public Employee(String matricule, String lastName, String firstName, String supervisor, String position, int nbChilds, Gender sex, Date birthday, Boolean isMArried) {
+    public Employee(String matricule, String lastName, String firstName, String supervisor, String position, int nbChilds, char sex, Date birthday, Boolean isMArried) {
         this.matricule = matricule;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -65,7 +64,7 @@ public class Employee {
         return nbChilds;
     }
 
-    public Gender getSex() {
+    public char getSex() {
         return sex;
     }
 
@@ -81,11 +80,11 @@ public class Employee {
         return phoneNumber;
     }
 
-    public void setSex(Gender sex) {
-        if (Arrays.asList(Gender.values()).contains(sex)) {
+    public void setSex(char sex) {
+        if (sex == 'F' | sex == 'M' | sex == 'X') {
             this.sex = sex;
         } else {
-            this.sex = Gender.X;
+            this.sex = 'X';
         }
     }
 

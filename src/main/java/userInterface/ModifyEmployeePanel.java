@@ -4,7 +4,6 @@ import Exceptions.*;
 import controller.ApplicationController;
 import model.Employee;
 import model.Fonction;
-import model.Gender;
 
 import javax.swing.*;
 import javax.swing.text.DateFormatter;
@@ -118,9 +117,9 @@ public class ModifyEmployeePanel extends JPanel implements ActionListener {
                 unknownButton = new JRadioButton("Inconnu");
                 ButtonGroup groupSex = new ButtonGroup();
                 groupSex.add(maleButton);
-                if (employeeChosen.getSex() == Gender.M){
+                if (employeeChosen.getSex() == 'M'){
                     maleButton.setSelected(true);
-                } else if (employeeChosen.getSex() == Gender.F){
+                } else if (employeeChosen.getSex() == 'F'){
                     femaleButton.setSelected(true);
                 } else {
                     unknownButton.setSelected(true);
@@ -182,13 +181,13 @@ public class ModifyEmployeePanel extends JPanel implements ActionListener {
             String positionId = position.getId();
 
             String nbChildsInfo = nbChildsField.getText();
-            Gender sex;
+            char sex;
             if (maleButton.isSelected()){
-                sex = Gender.M;
+                sex = 'M';
             } else if (femaleButton.isSelected()){
-                sex = Gender.F;
+                sex = 'F';
             } else {
-                sex = Gender.X;
+                sex = 'X';
             }
             Date birthday = model.getDate();
             Boolean isMarried = isMarriedBox.isSelected();

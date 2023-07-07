@@ -1,7 +1,11 @@
 package userInterface;
+
 import Exceptions.*;
 import controller.ApplicationController;
-import model.*;
+import model.Animal;
+import model.Employee;
+import model.PreparationSheet;
+import model.Species;
 
 import javax.swing.*;
 import java.awt.*;

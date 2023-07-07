@@ -1,8 +1,11 @@
 package userInterface;
 
-import Exceptions.*;
+import Exceptions.CareSheetResearchException;
+import Exceptions.ListSpeciesException;
+import Exceptions.SingletonConnexionException;
 import controller.ApplicationController;
-import model.*;
+import model.CareSheetResearch;
+import model.Species;
 
 import javax.swing.*;
 import java.awt.*;

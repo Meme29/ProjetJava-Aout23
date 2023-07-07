@@ -1,6 +1,7 @@
 package controller;
+
 import Exceptions.*;
-import business.*;
+import business.Manager;
 import model.*;
 
 import java.util.ArrayList;

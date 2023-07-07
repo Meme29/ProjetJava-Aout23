@@ -1,5 +1,7 @@
 package userInterface;
-import model.*;
+
+import model.Animal;
+import model.Gender;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;

@@ -1,13 +1,10 @@
 package dataAccess;
-import model.*;
-import Exceptions.*;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import Exceptions.*;
+import model.*;
+
+import java.sql.*;
 import java.util.ArrayList;
-import java.sql.Date;
 
 
 public class DBAccess implements DaoAccess{
@@ -433,7 +430,7 @@ public class DBAccess implements DaoAccess{
                             data.getString("supervisor"),
                             data.getString("position"),
                             data.getInt("nbChilds"),
-                            sex,
+                            data.getString("sex").charAt(0),
                             data.getDate("birthday"),
                             data.getBoolean("isMarried"),
                             data.getString("phoneNumber"));
@@ -472,8 +469,7 @@ public class DBAccess implements DaoAccess{
             preparedStatement.setString(4, employee.getSupervisor());
             preparedStatement.setString(5, employee.getPosition());
             preparedStatement.setInt(6, employee.getNbChilds());
-            preparedStatement.setString(7, employee.getSex().getLabel());
-
+            preparedStatement.setString(7, String.valueOf(employee.getSex()));
             java.util.Date birthday = employee.getBirthday();
             java.sql.Date sqlBirthday = new java.sql.Date(birthday.getTime());
             preparedStatement.setDate(8, sqlBirthday);
@@ -521,7 +517,7 @@ public class DBAccess implements DaoAccess{
             preparedStatement.setString(3, employee.getSupervisor());
             preparedStatement.setString(4, employee.getPosition());
             preparedStatement.setInt(5, employee.getNbChilds());
-            preparedStatement.setString(6, employee.getSex().getLabel());
+            preparedStatement.setString(6, String.valueOf(employee.getSex()));
             java.util.Date birthday = employee.getBirthday();
             java.sql.Date sqlBirthday = new java.sql.Date(birthday.getTime());
             preparedStatement.setDate(7, sqlBirthday);

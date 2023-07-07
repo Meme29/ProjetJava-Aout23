@@ -1,8 +1,11 @@
 package userInterface;
 
-import controller.*;
-import model.*;
 import Exceptions.*;
+import controller.ApplicationController;
+import model.Animal;
+import model.Breed;
+import model.Gender;
+import model.Species;
 
 import javax.swing.*;
 import javax.swing.text.DateFormatter;

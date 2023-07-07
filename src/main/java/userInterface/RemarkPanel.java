@@ -1,13 +1,16 @@
 package userInterface;
 
-import Exceptions.*;
-import controller.*;
-import javax.swing.*;
-import model.*;
+import Exceptions.ListFonctionsException;
+import Exceptions.RemarkByFonctionsException;
+import Exceptions.SingletonConnexionException;
+import controller.ApplicationController;
+import model.Fonction;
+import model.RemarkByFonction;
 
+import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 
