@@ -74,8 +74,8 @@ public class AddEmployeePanel extends JPanel implements ActionListener {
             formPanel.add(nbChildsField);
 
             sexLabel = new JLabel("Sexe * :");
-            maleButton = new JRadioButton("Mâle");
-            femaleButton = new JRadioButton("Femelle");
+            maleButton = new JRadioButton("Homme");
+            femaleButton = new JRadioButton("Femme");
             unknownButton = new JRadioButton("Inconnu");
             ButtonGroup groupSex = new ButtonGroup();
             groupSex.add(maleButton);
