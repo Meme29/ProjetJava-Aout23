@@ -70,7 +70,7 @@ CREATE TABLE `employee` (
   KEY `position_idx` (`position`),
   CONSTRAINT `position` FOREIGN KEY (`position`) REFERENCES `fonction` (`id`) ON DELETE CASCADE,
   CONSTRAINT `supervisor` FOREIGN KEY (`matricule`) REFERENCES `employee` (`matricule`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 CREATE TABLE `caresheet` (
   `label` varchar(45) NOT NULL,

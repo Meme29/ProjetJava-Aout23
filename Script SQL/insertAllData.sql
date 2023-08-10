@@ -108,7 +108,7 @@ INSERT INTO typeOfCare(id, label) VALUES('ty1', 'soin de base');
 INSERT INTO typeOfCare(id, label) VALUES('ty2', 'soin avancé');
 
 
-INSERT INTO `parc-animalier`.`employee` (`matricule`, `lastName`, `firstName`, `supervisor`, `position`, `nbChilds`, `sex`, `birthday`, `isMarried`, `phoneNumber`) 
+INSERT INTO employee (`matricule`, `lastName`, `firstName`, `supervisor`, `position`, `nbChilds`, `sex`, `birthday`, `isMarried`, `phoneNumber`) 
 VALUES 
     ('e1', 'Julius', 'Lilo', null, 'f1', '6', 'M', '1998-10-21', '0', '+32478 56 59 58'),
     ('e2', 'Smith', 'John', 'e1','f2', '2', 'M', '1990-05-12', '1', '+32456 78 90 12'),
@@ -169,101 +169,101 @@ VALUES (6, '2022-10-07', 'a', false, 'Opération chirurgicale', 'ty2');
 
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (1, 'a', '2021-10-05', 'L\'animal à mangé sa nourriture', false, 'emp3');
+VALUES (1, 'a', '2021-10-05', 'L\'animal à mangé sa nourriture', false, 'e3');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (2, 'a', '2022-10-05', 'Nettoyage accompli', false, 'emp4');
+VALUES (2, 'a', '2022-10-05', 'Nettoyage accompli', false, 'e4');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (3, 'b', '2022-11-11', 'Nécéssite un régime spécifique', true, 'emp1');
+VALUES (3, 'b', '2022-11-11', 'Nécéssite un régime spécifique', true, 'e1');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (4, 'e', '2021-10-09', 'Vermifugation réalisée', true, 'emp2');
+VALUES (4, 'e', '2021-10-09', 'Vermifugation réalisée', true, 'e2');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (5, 'f', '2020-10-10', 'Foulure de la patte arrière gauche', true, 'emp2');
+VALUES (5, 'f', '2020-10-10', 'Foulure de la patte arrière gauche', true, 'e2');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (6, 'c', '2022-10-07', 'Tumeur enlevée', true, 'emp1');
+VALUES (6, 'c', '2022-10-07', 'Tumeur enlevée', true, 'e1');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (7, 'd', '2023-10-11', 'Blessure à la patte guérie', true, 'emp3');
+VALUES (7, 'd', '2023-10-11', 'Blessure à la patte guérie', true, 'e3');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (8, 'f', '2020-10-10', 'A besoin d\'une visite vétérinaire', true, 'emp2');
+VALUES (8, 'f', '2020-10-10', 'A besoin d\'une visite vétérinaire', true, 'e2');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (9, 'h', '2023-04-18', 'Nouvelle naissance dans l\'enclos', false, 'emp4');
+VALUES (9, 'h', '2023-04-18', 'Nouvelle naissance dans l\'enclos', false, 'e4');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (10, 'j', '2022-01-12', 'Refus de manger, surveiller la situation', true, 'emp3');
+VALUES (10, 'j', '2022-01-12', 'Refus de manger, surveiller la situation', true, 'e3');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (11, 'k', '2023-02-10', 'Nouveau jouet installé', false, 'emp5');
+VALUES (11, 'k', '2023-02-10', 'Nouveau jouet installé', false, 'e5');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (12, 'm', '2022-11-05', 'Fièvre légère, traitement prescrit', true, 'emp1');
+VALUES (12, 'm', '2022-11-05', 'Fièvre légère, traitement prescrit', true, 'e1');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (13, 'n', '2021-10-28', 'Besoin d\'un nettoyage de l\'enclos', false, 'emp6');
+VALUES (13, 'n', '2021-10-28', 'Besoin d\'un nettoyage de l\'enclos', false, 'e6');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (14, 'o', '2023-01-19', 'Besoin d\'une nouvelle lampe chauffante', true, 'emp2');
+VALUES (14, 'o', '2023-01-19', 'Besoin d\'une nouvelle lampe chauffante', true, 'e2');
 
 INSERT INTO remark (number, animal, date, description, isMadeByVeterinarian, author)
-VALUES (15, 'p', '2022-06-30', 'Nouvelle vitamine ajoutée à l\'alimentation', true, 'emp1');
+VALUES (15, 'p', '2022-06-30', 'Nouvelle vitamine ajoutée à l\'alimentation', true, 'e1');
 
 
 
 INSERT INTO modification (date, animal, employee)
-VALUES  ('2021-10-05', 'a', 'emp3');
+VALUES  ('2021-10-05', 'a', 'e3');
 
 INSERT INTO modification (date, animal, employee)
-VALUES ('2022-10-05', 'b', 'emp4');
+VALUES ('2022-10-05', 'b', 'e4');
 
 INSERT INTO modification (date, animal, employee)
-VALUES ('2022-11-11', 'c', 'emp1');
+VALUES ('2022-11-11', 'c', 'e1');
 
 INSERT INTO modification (date, animal, employee)
-VALUES ('2021-10-09', 'd', 'emp2');
+VALUES ('2021-10-09', 'd', 'e2');
 
 INSERT INTO modification (date, animal, employee)
-VALUES ('2020-10-10', 'e', 'emp2');
+VALUES ('2020-10-10', 'e', 'e2');
 
 INSERT INTO modification (date, animal, employee)
-VALUES ('2022-10-07', 'f', 'emp1');
+VALUES ('2022-10-07', 'f', 'e1');
 
 
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (1, '2022-5-10', 4, 'emp3');
+VALUES (1, '2022-5-10', 4, 'e3');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (2, '2022-10-8', 4, 'emp3');
+VALUES (2, '2022-10-8', 4, 'e3');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (3, '2022-9-25', 4, 'emp3');
+VALUES (3, '2022-9-25', 4, 'e3');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (4, '2022-10-1', 4, 'emp3');
+VALUES (4, '2022-10-1', 4, 'e3');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (5, '2022-11-15', 3, 'emp4');
+VALUES (5, '2022-11-15', 3, 'e4');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (6, '2022-12-25', 2, 'emp5');
+VALUES (6, '2022-12-25', 2, 'e5');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (7, '2023-01-10', 1, 'emp4');
+VALUES (7, '2023-01-10', 1, 'e4');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (8, '2023-02-14', 5, 'emp6');
+VALUES (8, '2023-02-14', 5, 'e6');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (9, '2023-03-22', 6, 'emp4');
+VALUES (9, '2023-03-22', 6, 'e4');
 
 INSERT INTO prescriptionsheet (number, date, prescription, author)
-VALUES (10, '2023-04-01', 3, 'emp5');
+VALUES (10, '2023-04-01', 3, 'e5');
 
 
 
